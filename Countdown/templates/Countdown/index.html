@@ -1,0 +1,25 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Сегодня у Катя день рождения?</title>
+    <link href="{%static 'Countdown/style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Сегодня у Катя день рождения?</h1>
+
+    {% if birthday %}
+        <h1>ДА</h1>
+    {% else %}
+        <h1>Нет</h1>
+    {% endif %}
+    
+    <footer>
+        <p>От Панчи моей подруге Катя</p>
+        <p><a href="mailto:franciscobrucesubiabre@gmail.com">franciscobrucesubiabre@gmail.com</a></p>
+      </footer>
+
+
+</body>
+</html>
